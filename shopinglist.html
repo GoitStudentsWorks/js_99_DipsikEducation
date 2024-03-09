@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/js_99_DipsikEducation/assets/Logotype-0d514fde.svg" />
+    <title>Kilobyte</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    
+    
+    <script type="module" crossorigin src="/js_99_DipsikEducation/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_99_DipsikEducation/assets/vendor-bbb17a86.js">
+    <link rel="modulepreload" crossorigin href="/js_99_DipsikEducation/assets/localStorage-5e8ebf11.js">
+    <link rel="stylesheet" href="/js_99_DipsikEducation/assets/localStorage-0dd06b61.css">
+    <link rel="stylesheet" href="/js_99_DipsikEducation/assets/vendor-6007684f.css">
+    <link rel="stylesheet" href="/js_99_DipsikEducation/assets/shopinglist-0c74c220.css">
+  </head>
+  <body>
+    <header id="header" class="header">
+  <div class="header-container">
+    <div class="header-logo">
+      <div class="wrapper-decor-head">
+        <a href="./index.html" class="header-link" aria-label="Bookshelf">
+          <svg class="header-icon-one" id="icon-logo" width="24" height="24">
+            <use href="/js_99_DipsikEducation/assets/symbol-defs-63559100.svg#icon-logo"></use>
+          </svg>
+          <svg
+            class="header-icon-two"
+            id="icon-Bookshelf"
+            width="77"
+            height="14"
+          >
+            <use href="/js_99_DipsikEducation/assets/noptimizesprite-adbf2bd6.svg#icon-Bookshelf"></use>
+          </svg>
+        </a>
+      </div>
+      <nav class="header-nav">
+        <a class="header-nav-home" href="./index.html">HOME</a>
+        <a class="header-nav-shop" href="./shopinglist.html"
+          >SHOPPING LIST
+          <svg
+            class="header-nav-icon"
+            id="icon-uil_carts"
+            width="20"
+            height="20"
+          >
+            <use href="/js_99_DipsikEducation/assets/noptimizesprite-adbf2bd6.svg#icon-uil_cart"></use>
+          </svg>
+        </a>
+      </nav>
+    </div>
+    <div class="header-block">
+      <button type="button" aria-label="theme-switch" class="header-switcher">
+        <input type="checkbox" id="theme-switch" class="header-switch" />
+        <label for="theme-switch" class="header-switch-label"></label>
+      </button>
+      <div class="header-burger">
+        <button
+          class="burger-menu-button"
+          aria-label="burger-menu-button"
+          type="button"
+        >
+          <svg
+            class="btn-burger-icon"
+            id="icon-align-left"
+            width="28"
+            height="28"
+          >
+            <use
+              id="modal-burger-btn"
+              href="/js_99_DipsikEducation/assets/noptimizesprite-adbf2bd6.svg#icon-align-left"
+            ></use>
+          </svg>
+        </button>
+      </div>
+      <!-- <div class="header-btn-up">
+                <button class="header-btn">Sing up
+                    <a href=""></a>
+                    <svg class="header-btn-icon" id="icon-arrow-narrow-right" width="20" height="20">
+                        <use href="./img/noptimizesprite.svg#icon-arrow-narrow-right"></use>
+                    </svg>
+                </button>
+            </div> -->
+    </div>
+  </div>
+</header>
+
+    <section class="shopinglist-section container">
+      <div class="shopping-container">
+        <div class="wrapper-shop-list">
+          <section class="section-support">
+<div class="support">
+  <div class="support-container ">
+    <div class="support-div-title">
+      <h3 class="support-title">Support Ukraine</h3>
+      <svg class="support-svg-title">
+        <use href="/js_99_DipsikEducation/assets/noptimizesprite-adbf2bd6.svg#icon-trizub"></use>
+      </svg>
+    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper js-support-list"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <button class="support-btn swiper-button-next" aria-label="Scroll down up">
+      <svg class="support-btn-svg">
+        <use href="/js_99_DipsikEducation/assets/symbol-defs-63559100.svg#icon-fi-rr-small-down"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+</section>
+
+          <div class="warapper-shoplist-decor">
+            <h2 class="main-category-title title-shopping">
+              Shopping <span class="main-category-title-span">List</span>
+            </h2>
+            <div class="box-bookslist emptyShoppingList">
+              <p class="book-list">
+                This page is empty, add some books and proceed to order.
+              </p>
+              <img
+                class="bookslist"
+                src="/js_99_DipsikEducation/assets/bookslist-229fd7ef.png"
+                alt="empty cart"
+                width="300"
+                height="300"
+              />
+            </div>
+            <div class="shopping-list-wrap">
+              <ul class="shopping-list" id="shopping-list"></ul>
+            </div>
+            <section class="section-pag">
+  <div id="pagination1" class="tui-pagination pag-wrap"></div>
+  
+</section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="backdrop-burger">
+  <div class="burg-cont">
+    <nav class="modal-navigation">
+      <a class="burger-home-btn" href="./index.html">HOME</a>
+      <a class="burger-shop-list" href="./shopinglist.html"
+        >SHOPPING LIST
+        <svg
+          class="modal-shoping-icon"
+          id="icon-uil_cart"
+          width="20"
+          height="20"
+        >
+          <use href="/js_99_DipsikEducation/assets/noptimizesprite-adbf2bd6.svg#icon-uil_cart"></use>
+        </svg>
+      </a>
+    </nav>
+    <img src="/js_99_DipsikEducation/assets/bgburger-1619a24e.png" alt="books" class="back-img-burgermenu" />
+  </div>
+</section>
+
+<!-- Код Богдана -->
+<!-- <nav>
+        <ul>
+          <li>
+            <a href="../index.html" class="burger-home-btn">Home</a>
+          </li>
+          <li>
+            <div class="shopinglist-container">
+              <a href="./partials/shopinglist.html" class="burger-list-btn"
+                >shopinglist<span class="list-icon">
+                  <svg
+                    class="burger-img-btn"
+                    id="icon-uil_cart"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./img/noptimizesprite.svg#icon-uil_cart"></use>
+                  </svg> </span
+              ></a>
+            </div>
+          </li>
+        </ul>
+      </nav> -->
+
+    <!-- <script type="module" src="./main.js"></script> -->
+    
+  </body>
+</html>

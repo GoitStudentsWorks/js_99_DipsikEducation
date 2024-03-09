@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/js_99_DipsikEducation/assets/Logotype-0d514fde.svg" />
+    <title>Kilobyte</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    
+    <script type="module" crossorigin src="/js_99_DipsikEducation/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_99_DipsikEducation/assets/vendor-bbb17a86.js">
+    <link rel="modulepreload" crossorigin href="/js_99_DipsikEducation/assets/localStorage-5e8ebf11.js">
+    <link rel="stylesheet" href="/js_99_DipsikEducation/assets/vendor-6007684f.css">
+    <link rel="stylesheet" href="/js_99_DipsikEducation/assets/localStorage-0dd06b61.css">
+  </head>
+  <body>
+    <header id="header" class="header">
+  <div class="header-container">
+    <div class="header-logo">
+      <div class="wrapper-decor-head">
+        <a href="./index.html" class="header-link" aria-label="Bookshelf">
+          <svg class="header-icon-one" id="icon-logo" width="24" height="24">
+            <use href="/js_99_DipsikEducation/assets/symbol-defs-63559100.svg#icon-logo"></use>
+          </svg>
+          <svg
+            class="header-icon-two"
+            id="icon-Bookshelf"
+            width="77"
+            height="14"
+          >
+            <use href="/js_99_DipsikEducation/assets/noptimizesprite-adbf2bd6.svg#icon-Bookshelf"></use>
+          </svg>
+        </a>
+      </div>
+      <nav class="header-nav">
+        <a class="header-nav-home" href="./index.html">HOME</a>
+        <a class="header-nav-shop" href="./shopinglist.html"
+          >SHOPPING LIST
+          <svg
+            class="header-nav-icon"
+            id="icon-uil_carts"
+            width="20"
+            height="20"
+          >
+            <use href="/js_99_DipsikEducation/assets/noptimizesprite-adbf2bd6.svg#icon-uil_cart"></use>
+          </svg>
+        </a>
+      </nav>
+    </div>
+    <div class="header-block">
+      <button type="button" aria-label="theme-switch" class="header-switcher">
+        <input type="checkbox" id="theme-switch" class="header-switch" />
+        <label for="theme-switch" class="header-switch-label"></label>
+      </button>
+      <div class="header-burger">
+        <button
+          class="burger-menu-button"
+          aria-label="burger-menu-button"
+          type="button"
+        >
+          <svg
+            class="btn-burger-icon"
+            id="icon-align-left"
+            width="28"
+            height="28"
+          >
+            <use
+              id="modal-burger-btn"
+              href="/js_99_DipsikEducation/assets/noptimizesprite-adbf2bd6.svg#icon-align-left"
+            ></use>
+          </svg>
+        </button>
+      </div>
+      <!-- <div class="header-btn-up">
+                <button class="header-btn">Sing up
+                    <a href=""></a>
+                    <svg class="header-btn-icon" id="icon-arrow-narrow-right" width="20" height="20">
+                        <use href="./img/noptimizesprite.svg#icon-arrow-narrow-right"></use>
+                    </svg>
+                </button>
+            </div> -->
+    </div>
+  </div>
+</header>
+
+    <section class="backdrop-burger">
+  <div class="burg-cont">
+    <nav class="modal-navigation">
+      <a class="burger-home-btn" href="./index.html">HOME</a>
+      <a class="burger-shop-list" href="./shopinglist.html"
+        >SHOPPING LIST
+        <svg
+          class="modal-shoping-icon"
+          id="icon-uil_cart"
+          width="20"
+          height="20"
+        >
+          <use href="/js_99_DipsikEducation/assets/noptimizesprite-adbf2bd6.svg#icon-uil_cart"></use>
+        </svg>
+      </a>
+    </nav>
+    <img src="/js_99_DipsikEducation/assets/bgburger-1619a24e.png" alt="books" class="back-img-burgermenu" />
+  </div>
+</section>
+
+<!-- Код Богдана -->
+<!-- <nav>
+        <ul>
+          <li>
+            <a href="../index.html" class="burger-home-btn">Home</a>
+          </li>
+          <li>
+            <div class="shopinglist-container">
+              <a href="./partials/shopinglist.html" class="burger-list-btn"
+                >shopinglist<span class="list-icon">
+                  <svg
+                    class="burger-img-btn"
+                    id="icon-uil_cart"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./img/noptimizesprite.svg#icon-uil_cart"></use>
+                  </svg> </span
+              ></a>
+            </div>
+          </li>
+        </ul>
+      </nav> -->
+
+    <div class="container">
+    <div class="main-wrapper ">
+      <div class="wrapper-categories">
+    <section class="section" id="categories">
+  <div class="categories__block">
+    <ul class="categories__list" id="scrollableList">
+      <li
+        class="categories__item selected noted"
+        data-category="all categories"
+      >
+        <a href="">All categories</a>
+      </li>
+      <li class="categories__item" data-category="Graphic Books and Manga">
+        <a href="">Graphic Books and Manga</a>
+      </li>
+      <li class="categories__item" data-category="Paperback Nonfiction">
+        <a href="">Paperback Nonfiction</a>
+      </li>
+      <li
+        class="categories__item"
+        data-category="Middle Grade Paperback Monthly"
+      >
+        <a href="">Middle Grade Paperback Monthly</a>
+      </li>
+      <li
+        class="categories__item"
+        data-category="Advice How-To and Miscellaneous"
+      >
+        <a href="">Advice How-To and Miscellaneous</a>
+      </li>
+      <li
+        class="categories__item"
+        data-category="Combined Print and E-Book Nonfiction"
+      >
+        <a href="">Combined Print and E-Book Nonfiction</a>
+      </li>
+      <li class="categories__item" data-category="Series Books">
+        <a href="">Series Books</a>
+      </li>
+      <li class="categories__item" data-category="Picture Books">
+        <a href="">Picture Books</a>
+      </li>
+      <li
+        class="categories__item"
+        data-category="Children's Middle Grade Hardcover"
+      >
+        <a href="">Children's Middle Grade Hardcover</a>
+      </li>
+      <li class="categories__item" data-category="Audio Nonfiction">
+        <a href="">Audio Nonfiction</a>
+      </li>
+      <li
+        class="categories__item"
+        data-category="Young Adult Paperback Monthly"
+      >
+        <a href="">Young Adult Paperback Monthly</a>
+      </li>
+      <li class="categories__item" data-category="Hardcover Nonfiction">
+        <a href="">Hardcover Nonfiction</a>
+      </li>
+      <li class="categories__item" data-category="Young Adult Hardcover">
+        <a href="">Young Adult Hardcover</a>
+      </li>
+      <li class="categories__item" data-category="Trade Fiction Paperback">
+        <a href="">Trade Fiction Paperback</a>
+      </li>
+      <li class="categories__item" data-category="Hardcover Fiction">
+        <a href="">Hardcover Fiction</a>
+      </li>
+      <li class="categories__item" data-category="Audio Fiction">
+        <a href="">Audio Fiction</a>
+      </li>
+      <li
+        class="categories__item"
+        data-category="Combined Print and E-Book Fiction"
+      >
+        <a href="">Combined Print and E-Book Fiction</a>
+      </li>
+      <li class="categories__item" data-category="Mass Market Monthly">
+        <a href="">Mass Market Monthly</a>
+      </li>
+      <li class="categories__item" data-category="Business Books">
+        <a href="">Business Books</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <section class="section-support">
+<div class="support">
+  <div class="support-container ">
+    <div class="support-div-title">
+      <h3 class="support-title">Support Ukraine</h3>
+      <svg class="support-svg-title">
+        <use href="/js_99_DipsikEducation/assets/noptimizesprite-adbf2bd6.svg#icon-trizub"></use>
+      </svg>
+    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper js-support-list"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <button class="support-btn swiper-button-next" aria-label="Scroll down up">
+      <svg class="support-btn-svg">
+        <use href="/js_99_DipsikEducation/assets/symbol-defs-63559100.svg#icon-fi-rr-small-down"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+</section>
+
+    </div>
+    <section class="home-wrapper">
+  <h2 class="main-category-title">
+    Best Sellers <span class="main-category-title-span">Books</span>
+  </h2>
+  <div class="categories-wrapper">
+    <ul class="home-categories-list"></ul>
+  </div>
+</section>
+
+  </div>
+    <!-- ENOENT: no such file or directory, open '/home/runner/work/js_99_DipsikEducation/js_99_DipsikEducation/src/partials/shopinglist.html' -->
+
+    <span class="loader"></span>
+
+    <span id="modal"></span>
+
+    <button type="button" style="display: none;" class="up-button">Up</button>
+   
+    
+  </div>
+  </body>
+</html>
