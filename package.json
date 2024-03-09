@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/kilobyte/",
+    "build": "vite build --base=/js_99_DipsikEducation/",
     "preview": "vite preview"
   },
   "devDependencies": {
